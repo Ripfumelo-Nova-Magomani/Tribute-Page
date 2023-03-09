@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&family=Handlee&family=Kaushan+Script&family=Lobster+Two:ital,wght@0,400;1,700&family=Satisfy&family=Yatra+One&display=swap');
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
+  @media (max-width: 768px) {
+   aside {
+      width: 100%;
+    }
+  }
+
+* {
+  box-sizing:border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-padding-top: 7rem;
+}
+
+body {
+  background: #F3F3F3;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 25%;
+  grid-template-rows: 120px auto 60px 60px;
+  grid-template-areas: "hd hd"
+                      "main sidebar"
+                      "gallery gallery"
+                      "footer footer";
+}
+
+main,
+aside,
+.gallery,
+footer {
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    background: #141414;
+    grid-area: hd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    padding: 30px;
+    z-index: 10;
+}
+
+main {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  grid-area: main;
+  overflow: hidden;
+}
+
+aside {
+  background:  #fba92c;
+  grid-area: sidebar;
+  justify-content: center;
+  flex: 1;
+  float: right;
+  margin: 40px 20px auto;
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px #39603D;
+  background-image: url("../tribute-page-hanyu-yuzuru/images/background-2.jpg");
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  border-left: 15px solid #444444;
+}
+
+footer {
+  background: #171717;
+  grid-area: footer;
+}
+
+.navigation-list {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.navigation-item {
+  margin: 0 20px;
+}
+.navigation-item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.navigation-item a:hover,
+.navigation-item a:active {
+  color:#fba92c;
+}
+
+h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Set for tribute image */
+#image {
+  max-width: 100%;
+  height: auto;
+  justify-items: center;
+  margin: 0 auto;
+  display: block;
+  padding-top: 30px;
+}
+
+#img-caption {
+  color: #565656;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 5vw;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  margin-left: 30px;
+}
+
+main h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+  color: #c4882f;
+}
+
+main h2 {
+  padding: 0;
+  font-family: 'Kaushan Script', cursive, sans-serif;
+  font-size: 2.5rem;
+  color: #c4882f;
+}
+
+aside h3 {
+  padding: 20px;
+  font-family: 'Handlee', cursive, sans-serif;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+#profile,
+#career,
+#gallery {
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+.tribute-link {
+  margin-top: -15px;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.profile {
+ padding: -5px -5px 30px 30px;
+}
+
+.profile p {
+  margin: 10px 30px;
+  text-align: justify;
+  line-height: 1.8rem;
+}
+
+.statistics {
+  margin-top: 30px;
+  padding: 0;
+}
+
+.num {
+  display: block;
+  margin: 5px -5px auto;
+  font-family: 'Handlee', cursive, sans-serif;
+  font-size: 5vw;
+  font-weight: 800;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 3px #fff;
+}
+
+.summary {
+  margin: 0;
+  color: white;
+  font-family: 'Yatra One', serif;
+  font-size: 1.1rem;
+  font-weight: 200;
+  font-style: italic;
+  line-height: 2rem;
+}
+
+.stats {
+  margin: 40px 0;
+}
+
+.timeline * {
+  margin: 0;
+  padding: 0;
+}
+
+/* Timeline Container */
+.timeline {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+  
+  /* Outer Layer with the timeline border */
+.outer {
+  border-left: 3px solid #565656b6;
+}
+  
+  /* Card container */
+.card {
+  margin: 10px 10px 8px 20px;
+  padding: 12px;
+  background: #FFFFFF;
+  color: #39603D;
+  border-radius: 5px;
+  max-width: 500px;
+  font-size: 0.9rem;
+  font-style: italic;
+  box-shadow: 5px 3px 3px #39603D;
+}
+  
+  /* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin: 5px;
+}
+  
+  /* Year title of the card */
+.year {
+  color: #fba92c;
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+  
+  /* Timeline dot  */
+.year::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: #c4882f;
+  border-radius: 999px;
+  left: -43px;
+}
+  
+  /* gallery photos properties */
+.container {
+  overflow:hidden;
+  height: fit-content;
+  display:block;
+  position:relative;
+  float:left;
+}
+
+.title {
+  position:absolute;
+  display:block;
+  cursor:pointer;
+  top: 70%;
+  display: none;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-shadow: 1px 5px 10px black;
+  transition-duration: .3s;
+}
+
+.text {
+  position:absolute;
+  top: 85%;
+  cursor:pointer;
+  max-width: 80%;
+  text-align:center;
+  left: 50%;
+  text-shadow: 1px 5px 10px black;
+  display:none;
+  margin-right: -50%;
+  transition-duration: .3s;
+  transform: translate(-50%, -50%) 
+}
+
+.container:hover img {
+  transform: scale(1.1);
+  filter: grayscale(0);
+}
+.container:hover span {
+  color:white;
+  display: block;
+  transition-duration: .3s;
+  opacity: .8;
+  padding: 3px;
+  background-color: #fba92c;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 0 auto;
+}
+  
+.gallery img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    cursor:pointer;
+    margin-bottom: -5px;
+    filter:grayscale(100%);
+    transition: 1s;
+}
+  
+.gallery::after {
+  content: "";
+  width: 350px;
+  }
+
+.footer {
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+/* youtube video */
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding: 0% 0% 56.25%; 
+  height: 0;
+  margin: 40px auto;
+  display: block;
+  overflow: hidden;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0; bottom: 0; left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* set up date/time */
+.datetime {
+  width: 250px;
+  padding: 6px;
+  border-radius: 4px;
+  border-bottom: 2px #faae3d solid;
+  margin: 0 auto;
+}
+.time {
+  color: #f5a835;
+  margin: -8px auto;
+  font-weight: 500;
+}
+.date {
+  margin-top: 12px;
+  color: #444444;
+}
